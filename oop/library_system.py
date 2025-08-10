@@ -32,10 +32,7 @@ class Library:
         self.books = []
 
     def add_book(self, book):
-        if isinstance(book, Book):
-            self.books.append(book)
-        else:
-            print("Only Book instances can be added to the library.")
+        self.books.append(book)
 
     def list_books(self):
         for book in self.books:
